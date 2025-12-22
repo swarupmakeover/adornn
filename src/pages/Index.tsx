@@ -68,7 +68,7 @@ const Index = () => {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="text-white border-white hover:bg-white hover:text-primary text-lg px-8">
+            <Button asChild variant="outline" size="lg" className="border-white hover:bg-white text-primary text-lg px-8">
               <Link to="/style-quiz">
                 Take Style Quiz
               </Link>
