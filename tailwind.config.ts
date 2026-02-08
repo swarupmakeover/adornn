@@ -32,9 +32,6 @@ export default {
 				'soft-taupe': 'hsl(var(--soft-taupe))',
 				'rich-brown': 'hsl(var(--rich-brown))',
 				'cream-white': 'hsl(var(--cream-white))',
-				'olive-green': 'hsl(var(--olive-green))',
-				'burnished-gold': 'hsl(var(--burnished-gold))',
-				'crimson-red': 'hsl(var(--crimson-red))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
