@@ -381,19 +381,11 @@ const Shop = () => {
                     No Recommendations Yet
                   </h3>
                   <p className="text-muted-foreground mb-6">
-                    Add items to your wishlist or take our style quiz to get personalized recommendations
+                    Add items to your wishlist to get personalized recommendations
                   </p>
-                  <div className="flex gap-4 justify-center">
-                    <Button asChild variant="outline">
-                      <Link to="/style-quiz">
-                        Take Style Quiz
-                        <ArrowRight className="ml-2 h-4 w-4" />
-                      </Link>
-                    </Button>
-                    <Button onClick={() => setActiveTab("products")}>
-                      Browse Products
-                    </Button>
-                  </div>
+                  <Button onClick={() => setActiveTab("products")}>
+                    Browse Products
+                  </Button>
                 </CardContent>
               </Card>
             )}

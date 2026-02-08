@@ -25,7 +25,6 @@ const Navigation = () => {
     { name: "Hair Care", href: "/shop/hair-care" },
     { name: "Body Care", href: "/shop/bath-and-body" },
     { name: "Kits & Gifts", href: "/shop/kits-and-gifts" },
-    { name: "Beauty Quiz", href: "/style-quiz" },
   ];
 
   const isActive = (href: string) => location.pathname === href;

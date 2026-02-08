@@ -81,20 +81,12 @@ const Cart = () => {
               Start shopping to find your perfect home decor pieces!
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg">
-                <Link to="/shop">
-                  Start Shopping
-                  <ShoppingBag className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-              
-              <Button asChild variant="outline" size="lg">
-                <Link to="/style-quiz">
-                  Take Style Quiz
-                </Link>
-              </Button>
-            </div>
+            <Button asChild size="lg">
+              <Link to="/shop">
+                Start Shopping
+                <ShoppingBag className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
           </div>
         </div>
       </div>

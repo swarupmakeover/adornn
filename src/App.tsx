@@ -20,7 +20,7 @@ const BathAndBody = lazy(() => import("./pages/BathAndBody"));
 const Skincare = lazy(() => import("./pages/Skincare"));
 const HairCare = lazy(() => import("./pages/HairCare"));
 const KitsAndGifts = lazy(() => import("./pages/KitsAndGifts"));
-const StyleQuizPage = lazy(() => import("./pages/StyleQuizPage"));
+
 const ProductDetail = lazy(() => import("./pages/ProductDetail"));
 const About = lazy(() => import("./pages/About"));
 const Contact = lazy(() => import("./pages/Contact"));
@@ -79,7 +79,7 @@ const App = () => {
                       <Route path="/shop/skincare" element={<Skincare />} />
                       <Route path="/shop/hair-care" element={<HairCare />} />
                       <Route path="/shop/kits-and-gifts" element={<KitsAndGifts />} />
-                      <Route path="/style-quiz" element={<StyleQuizPage />} />
+                      
                       <Route path="/product/:id" element={<ProductDetail />} />
                       <Route path="/about" element={<About />} />
                       <Route path="/contact" element={<Contact />} />

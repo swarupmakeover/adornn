@@ -47,21 +47,6 @@ const RelatedProducts = ({ products, currentProduct }: RelatedProductsProps) => 
         ))}
       </div>
 
-      {/* Complete the Look Section */}
-      <div className="bg-gradient-subtle rounded-lg p-8 text-center">
-        <h3 className="font-playfair text-xl font-medium text-primary mb-4">
-          Complete the Look
-        </h3>
-        <p className="text-muted-foreground mb-6">
-          Get personalized recommendations based on your style preferences
-        </p>
-        <Button asChild className="btn-hero">
-          <Link to="/style-quiz">
-            Take Style Quiz
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Link>
-        </Button>
-      </div>
     </div>
   );
 };
