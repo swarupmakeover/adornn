@@ -8,58 +8,71 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Base colors - warm, sophisticated palette */
-    --background: 35 15% 98%;
-    --foreground: 25 15% 15%;
+    /* Base colors - Adornn Herbals brand palette */
+    /* Background: Creamy Beige #F2E8D5 */
+    --background: 39 53% 89%;
+    /* Foreground: Deep Chestnut #3E271D */
+    --foreground: 18 36% 18%;
 
-    /* Card components */
-    --card: 35 20% 97%;
-    --card-foreground: 25 15% 15%;
+    /* Card components - lighter cream */
+    --card: 39 53% 92%;
+    --card-foreground: 18 36% 18%;
 
     /* Popover components */
-    --popover: 35 20% 97%;
-    --popover-foreground: 25 15% 15%;
+    --popover: 39 53% 92%;
+    --popover-foreground: 18 36% 18%;
 
-    /* Primary - warm mocha (#6B4C3B converted to HSL) */
-    --primary: 25 28% 33%;
-    --primary-foreground: 35 25% 95%;
+    /* Primary - Deep Chestnut #3E271D */
+    --primary: 18 36% 18%;
+    --primary-foreground: 39 53% 92%;
 
-    /* Secondary - soft cream (#F4EDE4 converted to HSL) */
-    --secondary: 35 35% 93%;
-    --secondary-foreground: 25 28% 33%;
+    /* Secondary - Warm Yellow-Cream #E8D8A8 */
+    --secondary: 45 57% 78%;
+    --secondary-foreground: 18 36% 18%;
 
-    /* Muted tones */
-    --muted: 30 20% 92%;
-    --muted-foreground: 25 12% 45%;
+    /* Muted tones - softer beige */
+    --muted: 39 40% 85%;
+    --muted-foreground: 18 25% 40%;
 
-    /* Accent - warmer cream */
-    --accent: 40 30% 90%;
-    --accent-foreground: 25 28% 33%;
+    /* Accent - Burnished Gold #C9A55E */
+    --accent: 40 50% 58%;
+    --accent-foreground: 18 36% 18%;
 
-    /* Destructive - warm red */
-    --destructive: 0 65% 55%;
-    --destructive-foreground: 35 25% 95%;
+    /* Destructive - Crimson Red #B03A2E */
+    --destructive: 6 59% 44%;
+    --destructive-foreground: 39 53% 92%;
 
     /* Borders and inputs */
-    --border: 30 25% 88%;
-    --input: 30 25% 88%;
-    --ring: 25 28% 33%;
+    --border: 39 35% 80%;
+    --input: 39 35% 80%;
+    --ring: 18 36% 18%;
 
     /* Custom design tokens */
-    --warm-beige: 35 25% 95%;
-    --soft-taupe: 30 15% 85%;
-    --rich-brown: 20 35% 25%;
-    --cream-white: 45 40% 98%;
+    /* Creamy Beige #F2E8D5 */
+    --warm-beige: 39 53% 89%;
+    /* Warm Yellow-Cream #E8D8A8 */
+    --soft-taupe: 45 57% 78%;
+    /* Deep Chestnut #3E271D */
+    --rich-brown: 18 36% 18%;
+    /* Lighter cream for contrast */
+    --cream-white: 45 60% 95%;
+    
+    /* Olive Green accent #7D8B51 */
+    --olive-green: 74 26% 43%;
+    /* Burnished Gold #C9A55E */
+    --burnished-gold: 40 50% 58%;
+    /* Crimson Red #B03A2E */
+    --crimson-red: 6 59% 44%;
     
     /* Gradients */
-    --gradient-warm: linear-gradient(135deg, hsl(35 25% 95%), hsl(30 20% 92%));
-    --gradient-hero: linear-gradient(135deg, hsl(25 28% 33%), hsl(20 35% 25%));
-    --gradient-subtle: linear-gradient(180deg, hsl(35 15% 98%), hsl(35 20% 97%));
+    --gradient-warm: linear-gradient(135deg, hsl(39 53% 89%), hsl(45 57% 78%));
+    --gradient-hero: linear-gradient(135deg, hsl(18 36% 18%), hsl(18 36% 25%));
+    --gradient-subtle: linear-gradient(180deg, hsl(39 53% 89%), hsl(39 53% 92%));
     
-    /* Shadows */
-    --shadow-soft: 0 4px 20px hsl(25 28% 33% / 0.08);
-    --shadow-medium: 0 8px 30px hsl(25 28% 33% / 0.12);
-    --shadow-warm: 0 10px 40px hsl(25 28% 33% / 0.15);
+    /* Shadows - using deep chestnut */
+    --shadow-soft: 0 4px 20px hsl(18 36% 18% / 0.08);
+    --shadow-medium: 0 8px 30px hsl(18 36% 18% / 0.12);
+    --shadow-warm: 0 10px 40px hsl(18 36% 18% / 0.15);
     
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -67,76 +80,74 @@ All colors MUST be HSL.
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 39 53% 92%;
+    --sidebar-foreground: 18 36% 18%;
+    --sidebar-primary: 18 36% 18%;
+    --sidebar-primary-foreground: 39 53% 92%;
+    --sidebar-accent: 45 57% 78%;
+    --sidebar-accent-foreground: 18 36% 18%;
+    --sidebar-border: 39 35% 80%;
+    --sidebar-ring: 40 50% 58%;
   }
 
   .dark {
-    /* Dark mode with warm undertones */
-    --background: 25 20% 8%;
-    --foreground: 35 25% 95%;
+    /* Dark mode - Deep Chestnut based */
+    --background: 18 36% 10%;
+    --foreground: 39 53% 89%;
 
-    --card: 25 18% 12%;
-    --card-foreground: 35 25% 95%;
+    --card: 18 30% 14%;
+    --card-foreground: 39 53% 89%;
 
-    --popover: 25 18% 12%;
-    --popover-foreground: 35 25% 95%;
+    --popover: 18 30% 14%;
+    --popover-foreground: 39 53% 89%;
 
-    --primary: 35 25% 95%;
-    --primary-foreground: 25 28% 33%;
+    --primary: 39 53% 89%;
+    --primary-foreground: 18 36% 18%;
 
-    --secondary: 25 15% 18%;
-    --secondary-foreground: 35 25% 95%;
+    --secondary: 18 25% 20%;
+    --secondary-foreground: 39 53% 89%;
 
-    --muted: 25 15% 18%;
-    --muted-foreground: 30 12% 65%;
+    --muted: 18 25% 20%;
+    --muted-foreground: 39 40% 65%;
 
-    --accent: 25 15% 18%;
-    --accent-foreground: 35 25% 95%;
+    --accent: 40 50% 45%;
+    --accent-foreground: 39 53% 89%;
 
-    --destructive: 0 65% 45%;
-    --destructive-foreground: 35 25% 95%;
+    --destructive: 6 59% 40%;
+    --destructive-foreground: 39 53% 89%;
 
-    --border: 25 15% 18%;
-    --input: 25 15% 18%;
-    --ring: 35 25% 85%;
+    --border: 18 25% 20%;
+    --input: 18 25% 20%;
+    --ring: 40 50% 58%;
     
     /* Dark mode custom tokens */
-    --warm-beige: 25 15% 15%;
-    --soft-taupe: 25 12% 20%;
-    --rich-brown: 35 25% 85%;
-    --cream-white: 25 18% 12%;
+    --warm-beige: 18 25% 15%;
+    --soft-taupe: 18 20% 22%;
+    --rich-brown: 39 53% 85%;
+    --cream-white: 18 30% 14%;
+    
+    --olive-green: 74 26% 35%;
+    --burnished-gold: 40 50% 50%;
+    --crimson-red: 6 59% 40%;
     
     /* Dark gradients */
-    --gradient-warm: linear-gradient(135deg, hsl(25 20% 8%), hsl(25 18% 12%));
-    --gradient-hero: linear-gradient(135deg, hsl(25 28% 33%), hsl(35 25% 85%));
-    --gradient-subtle: linear-gradient(180deg, hsl(25 20% 8%), hsl(25 18% 12%));
+    --gradient-warm: linear-gradient(135deg, hsl(18 36% 10%), hsl(18 30% 14%));
+    --gradient-hero: linear-gradient(135deg, hsl(18 36% 18%), hsl(39 53% 85%));
+    --gradient-subtle: linear-gradient(180deg, hsl(18 36% 10%), hsl(18 30% 14%));
     
     /* Dark shadows */
     --shadow-soft: 0 4px 20px hsl(0 0% 0% / 0.15);
     --shadow-medium: 0 8px 30px hsl(0 0% 0% / 0.25);
     --shadow-warm: 0 10px 40px hsl(0 0% 0% / 0.3);
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    
+    --sidebar-background: 18 36% 10%;
+    --sidebar-foreground: 39 53% 89%;
+    --sidebar-primary: 40 50% 58%;
+    --sidebar-primary-foreground: 18 36% 10%;
+    --sidebar-accent: 18 25% 20%;
+    --sidebar-accent-foreground: 39 53% 89%;
+    --sidebar-border: 18 25% 20%;
+    --sidebar-ring: 40 50% 58%;
   }
 }
 
