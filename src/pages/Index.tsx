@@ -45,34 +45,32 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroBanner})` }}
-        />
-        <div className="absolute inset-0 bg-black/40" />
-        
-        <div className="relative z-10 text-center text-white max-w-4xl px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
-            Where Nature Meets Nurture
-          </h1>
-          <p className="text-lg md:text-xl text-white/90 mb-8 animate-fade-in">
-            Discover 100% herbal and authentic products crafted with traditional Ayurvedic wisdom. 
-            Free from harmful chemicals, backed by research, and made with love.
-          </p>
+      <section className="relative w-full">
+        <div className="relative w-full">
+          <img
+            src={heroBanner}
+            alt="Adornn - Where Nature Meets Nurture"
+            className="w-full h-auto object-contain"
+          />
+          <div className="absolute inset-0 bg-black/30" />
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
-            <Button asChild size="lg" className="btn-hero text-lg px-8">
-              <Link to="/shop">
-                Shop All Products
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-            <Button asChild variant="outline" size="lg" className="border-white hover:bg-white text-primary text-lg px-8">
-              <Link to="/style-quiz">
-                Take Style Quiz
-              </Link>
-            </Button>
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="text-center text-white max-w-4xl px-4">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 animate-fade-in">
+                Where Nature Meets Nurture
+              </h1>
+              <p className="text-sm md:text-lg lg:text-xl text-white/90 mb-6 md:mb-8 animate-fade-in max-w-2xl mx-auto">
+                Discover 100% herbal and authentic products crafted with traditional Ayurvedic wisdom. 
+                Free from harmful chemicals, backed by research, and made with love.
+              </p>
+              
+              <Button asChild size="lg" className="btn-hero text-base md:text-lg px-6 md:px-8 animate-fade-in">
+                <Link to="/shop">
+                  Shop All Products
+                  <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
