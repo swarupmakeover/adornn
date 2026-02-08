@@ -51,23 +51,15 @@ const Bedroom = () => {
                 </h2>
                 
                 <p className="text-muted-foreground mb-8 text-lg">
-                  Find more pieces perfectly curated for your bedroom. 
-                  Take our style quiz to get personalized recommendations.
+                  Find more pieces perfectly curated for your bedroom.
                 </p>
                 
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button asChild className="btn-hero">
-                    <Link to="/shop">
-                      <ArrowLeft className="h-4 w-4 mr-2" />
-                      Browse All Products
-                    </Link>
-                  </Button>
-                  <Button asChild variant="outline">
-                    <Link to="/style-quiz">
-                      Take Style Quiz
-                    </Link>
-                  </Button>
-                </div>
+                <Button asChild className="btn-hero">
+                  <Link to="/shop">
+                    <ArrowLeft className="h-4 w-4 mr-2" />
+                    Browse All Products
+                  </Link>
+                </Button>
               </CardContent>
             </Card>
           </>
@@ -87,19 +79,12 @@ const Bedroom = () => {
                 Luxurious bedding, stylish storage, and ambient lighting to create your dream space.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button asChild className="btn-hero">
-                  <Link to="/shop">
-                    <ArrowLeft className="h-4 w-4 mr-2" />
-                    Browse All Products
-                  </Link>
-                </Button>
-                <Button asChild variant="outline">
-                  <Link to="/style-quiz">
-                    Take Style Quiz
-                  </Link>
-                </Button>
-              </div>
+              <Button asChild className="btn-hero">
+                <Link to="/shop">
+                  <ArrowLeft className="h-4 w-4 mr-2" />
+                  Browse All Products
+                </Link>
+              </Button>
             </CardContent>
           </Card>
         )}

@@ -56,23 +56,15 @@ const HairCare = () => {
                 </h2>
                 
                 <p className="text-muted-foreground mb-8 text-lg">
-                  Find more products perfectly suited for your hair type and goals. 
-                  Take our beauty quiz to get personalized recommendations.
+                  Find more products perfectly suited for your hair type and goals.
                 </p>
                 
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button asChild className="btn-hero">
-                    <Link to="/shop">
-                      <ArrowLeft className="h-4 w-4 mr-2" />
-                      Browse All Products
-                    </Link>
-                  </Button>
-                  <Button asChild variant="outline">
-                    <Link to="/style-quiz">
-                      Take Beauty Quiz
-                    </Link>
-                  </Button>
-                </div>
+                <Button asChild className="btn-hero">
+                  <Link to="/shop">
+                    <ArrowLeft className="h-4 w-4 mr-2" />
+                    Browse All Products
+                  </Link>
+                </Button>
               </CardContent>
             </Card>
           </>
